@@ -10,10 +10,11 @@ public class producto {
     public producto(){
 
     }
-    public producto(String nombre, String descripcion, int cantidad) {
+    public producto(String nombre, String descripcion, int cantidad,String id) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
+        this.id = id;
     }
 
     public void sumar(){
@@ -23,5 +24,4 @@ public class producto {
     public String getId() {
         return id;
     }
-
 }

@@ -2,6 +2,7 @@ package com.parcial.parcial.controller;
 import com.parcial.parcial.service.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import com.parcial.parcial.modelo.producto;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class controlador {
         return servicio.getLista();
     };
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public producto agregarUno(@RequestBody producto producto){
         return servicio.agregar(producto);
     };
