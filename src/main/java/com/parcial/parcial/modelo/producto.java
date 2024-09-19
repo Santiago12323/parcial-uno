@@ -24,4 +24,16 @@ public class producto {
     public String getId() {
         return id;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
 }
